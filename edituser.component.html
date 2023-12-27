@@ -1,0 +1,47 @@
+<p>edituser works!</p>
+
+
+<h2>Edit User</h2>
+
+<form [formGroup]="updateemployeeform">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Name </label>
+        <input type="text" class="form-control" formControlName="name">
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">address</label>
+        <input type="text" class="form-control" formControlName="add">
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">JopDescription</label>
+        <input type="text" class="form-control" formControlName="jopdescription">
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input type="text" class="form-control" formControlName="mail">
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input type="text" class="form-control" formControlName="username">
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">passowrd</label>
+        <input type="text" class="form-control" formControlName="passowrd">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="updateemployee()" [routerLink]="['']">Submit</button>
+
+</form>

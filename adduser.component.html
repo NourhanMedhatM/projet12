@@ -1,0 +1,47 @@
+<h2>Add Employee{{employee }}</h2>
+
+<form  [formGroup]="employeeform">
+  
+    <div class="form-group">
+      <label for="exampleFormControlname">Name </label>
+      <input type="text" formControlName="name" >
+    </div>
+
+      <div class="form-group">
+        <label for="exampleInputadd">address</label>
+        <input type="text" formControlName="add">
+  
+      </div>
+      <div class="form-group">
+        <label for="exampleInputadd">JopDescription</label>
+        <input type="text" formControlName="jopdescription">
+  
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputemail">Email</label>
+        <input type="text"  formControlName="email" >
+      </div>
+     
+      <div class="form-group">
+        <label for="exampleInputpassword">Username</label>
+        <input type="text"  formControlName="username"  >
+   
+      </div>
+     
+      <div class="form-group">
+        <label for="exampleInputpassword">passowrd</label>
+        <input type="text"  formControlName="password"  >
+   
+      </div>
+      
+     
+      <button type="submit" class="btn btn-primary" (click)="adduser()" [routerLink]="['']">Submit</button>
+
+  </form>
+
+
+  
+  
+  
+ 
