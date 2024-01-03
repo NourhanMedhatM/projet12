@@ -1,12 +1,20 @@
 import { Injectable } from '@angular/core';
 import { User } from './user';
+import{ HttpClient} from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserserviceService {
+  private apiurl='https://fakestoreapi.com/users';
+  
 
-  constructor() { }
+  constructor(private http : HttpClient) { }
+   getdatafromapi():Observable <Apiuser[]> {
+    return this.http.get<Apiuser[]>(this . apiurl)
+   }
+
 
   getallusers(): User[] {
     return this.users;
